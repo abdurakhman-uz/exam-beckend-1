@@ -103,7 +103,7 @@ let productsController = {
     let { productName, productId } = req.body;
 
     try {
-      const productFind = products.find( product => product.product_id =  productId)
+      const productFind = products.find( product => product.product_id ==  productId)
 
     if (!productFind) {
       throw new Error('User not found')
